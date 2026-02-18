@@ -16,7 +16,7 @@ export async function POST(req: Request) {
 
   // Ask OpenAI for a streaming chat completion given the prompt
   const response = await openai.chat.completions.create({
-    model: 'ftjob-cGdrFD3j6ADx4qZhZQ98Ho6t',
+    model: 'ft:gpt-4o-2024-08-06:personal:northeasternpoet:DAhGDIdb',
     stream: true,
     messages: [
       {
