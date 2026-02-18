@@ -13,6 +13,25 @@ const examples = [
   "Is this something you're navigating right now?",
 ];
 
+const coralImages = [
+  {
+    src: "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&q=80",
+    alt: "Vibrant coral reef with tropical fish",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800&q=80",
+    alt: "Pink and orange coral close-up",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1559827291-72f26a23f3b7?w=800&q=80",
+    alt: "Underwater coral garden",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80",
+    alt: "Deep coral reef",
+  },
+];
+
 export default function Chat() {
   const formRef = useRef<HTMLFormElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -28,9 +47,32 @@ export default function Chat() {
   const disabled = isLoading || input.length === 0;
 
   return (
-    <main className="flex min-h-screen flex-col items-center bg-[#0e0e11] text-white">
+    <main className="flex min-h-screen flex-col items-center bg-[#0a0d14] text-white">
+
+      {/* Ambient coral hero — visible on empty state */}
+      {messages.length === 0 && (
+        <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+          {/* full-bleed mosaic */}
+          <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
+            {coralImages.map((img, i) => (
+              <div key={i} className="relative overflow-hidden">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover opacity-20 saturate-[0.6]"
+                  sizes="50vw"
+                />
+              </div>
+            ))}
+          </div>
+          {/* dark vignette so text stays readable */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0d14]/60 via-[#0a0d14]/70 to-[#0a0d14]" />
+        </div>
+      )}
+
       {/* Header */}
-      <header className="fixed top-0 z-10 w-full border-b border-white/5 bg-[#0e0e11]/80 backdrop-blur-md">
+      <header className="fixed top-0 z-20 w-full border-b border-white/5 bg-[#0a0d14]/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-screen-md items-center justify-between px-5 py-4">
           <div className="flex items-center gap-3">
             <div className="relative h-8 w-8 overflow-hidden rounded-full ring-1 ring-white/10">
@@ -45,7 +87,7 @@ export default function Chat() {
       </header>
 
       {/* Messages / Empty state */}
-      <div className="w-full max-w-screen-md flex-1 px-4 pb-48 pt-24 sm:px-0">
+      <div className="relative z-10 w-full max-w-screen-md flex-1 px-4 pb-48 pt-24 sm:px-0">
         {messages.length > 0 ? (
           <div className="flex flex-col gap-6">
             {messages.map((message, i) => (
@@ -56,7 +98,6 @@ export default function Chat() {
                   message.role === "user" ? "flex-row-reverse" : "flex-row",
                 )}
               >
-                {/* Avatar */}
                 <div className="mt-0.5 shrink-0">
                   {message.role === "user" ? (
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-violet-600">
@@ -68,8 +109,6 @@ export default function Chat() {
                     </div>
                   )}
                 </div>
-
-                {/* Bubble */}
                 <div
                   className={clsx(
                     "max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed",
@@ -98,9 +137,31 @@ export default function Chat() {
           </div>
         ) : (
           /* Landing card */
-          <div className="mt-8 overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] shadow-2xl">
-            <div className="flex flex-col gap-5 p-8">
-              <div className="relative h-14 w-14 overflow-hidden rounded-2xl shadow-lg ring-1 ring-white/10">
+          <div className="mt-8 overflow-hidden rounded-2xl border border-white/5 bg-white/[0.04] shadow-2xl backdrop-blur-sm">
+
+            {/* Coral photo strip */}
+            <div className="relative h-44 w-full overflow-hidden">
+              <div className="absolute inset-0 flex">
+                {coralImages.map((img, i) => (
+                  <div key={i} className="relative flex-1">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-cover"
+                      sizes="25vw"
+                    />
+                  </div>
+                ))}
+              </div>
+              {/* bottom fade into card */}
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#111318] to-transparent" />
+              <div className="absolute inset-x-0 top-0 h-8 bg-gradient-to-b from-[#0a0d14]/60 to-transparent" />
+            </div>
+
+            {/* Intro */}
+            <div className="flex flex-col gap-4 px-8 pb-6 pt-4">
+              <div className="relative -mt-10 h-14 w-14 overflow-hidden rounded-2xl shadow-lg ring-1 ring-white/10">
                 <Image src="/sample-image.png" alt="poet" fill className="object-cover" />
               </div>
               <div>
@@ -131,6 +192,7 @@ export default function Chat() {
               </div>
             </div>
 
+            {/* Prompts */}
             <div className="border-t border-white/5 bg-white/[0.02] p-8">
               <p className="mb-4 text-xs font-medium uppercase tracking-widest text-white/30">
                 Try asking
@@ -147,12 +209,27 @@ export default function Chat() {
                 ))}
               </div>
             </div>
+
+            {/* Coral thumbnail row at bottom */}
+            <div className="flex gap-2 border-t border-white/5 bg-white/[0.02] p-4">
+              {coralImages.map((img, i) => (
+                <div key={i} className="relative h-14 flex-1 overflow-hidden rounded-lg ring-1 ring-white/5">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover opacity-70 transition-opacity hover:opacity-100"
+                    sizes="10vw"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </div>
 
       {/* Input bar */}
-      <div className="fixed bottom-0 w-full">
+      <div className="fixed bottom-0 z-20 w-full">
         <div className="mx-auto max-w-screen-md px-4 pb-6 sm:px-0">
           <form
             ref={formRef}
@@ -192,15 +269,15 @@ export default function Chat() {
 
           <p className="mt-3 text-center text-xs text-white/20">
             Built with{" "}
-            <a href="https://sdk.vercel.ai/docs" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white/40 transition-colors">
+            <a href="https://sdk.vercel.ai/docs" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 transition-colors hover:text-white/40">
               Vercel AI SDK
             </a>{" "}
             &{" "}
-            <a href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white/40 transition-colors">
+            <a href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 transition-colors hover:text-white/40">
               OpenAI
             </a>
             , as part of a course by{" "}
-            <a href="https://linkin.bio/yallahalim/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white/40 transition-colors">
+            <a href="https://linkin.bio/yallahalim/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 transition-colors hover:text-white/40">
               Halim Madi
             </a>
             .
