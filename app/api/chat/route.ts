@@ -24,7 +24,7 @@ export async function POST(req: Request) {
         // Note: This has to be the same system prompt as the one
         // used in the fine-tuning dataset
         content:
-          "You are an annoying poet"
+          "you are a well intentioned poet, into marxism and the natural world"
       },
       ...messages
     ]
