@@ -1,8 +1,16 @@
+---
+title: "Malm — Fossil Capital and Manchester"
+type: research-note
+tags: [peterloo, manchester, shelley, malm, fossil-capital, 1819, chronology]
+created: 2026-09-04
+status: working
+---
+
 # Manchester in Two Chronologies
 
 ## Andreas Malm, *Fossil Capital*, against the run-up to Peterloo
 
-Working notes. Compiled 4 September 2026.
+Related: [[Peterloo and The Mask of Anarchy]] · [[The Mask of Anarchy — Student Handout]]
 
 ---
 
