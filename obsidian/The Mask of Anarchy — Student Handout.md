@@ -3,7 +3,7 @@ title: "The Mask of Anarchy — Student Handout"
 type: handout
 course:
 tags: [shelley, peterloo, manchester, 1819, romanticism, handout]
-created: 2026-09-04
+created: 2026-09-10
 ---
 
 # *The Mask of Anarchy*

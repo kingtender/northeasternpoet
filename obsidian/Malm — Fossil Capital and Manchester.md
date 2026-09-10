@@ -2,7 +2,7 @@
 title: "Malm — Fossil Capital and Manchester"
 type: research-note
 tags: [peterloo, manchester, shelley, malm, fossil-capital, 1819, chronology]
-created: 2026-09-04
+created: 2026-09-10
 status: working
 ---
 

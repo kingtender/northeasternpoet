@@ -2,7 +2,7 @@
 title: "Peterloo and The Mask of Anarchy"
 type: MOC
 tags: [peterloo, shelley, manchester, 1819, moc]
-created: 2026-09-04
+created: 2026-09-10
 ---
 
 # Peterloo and *The Mask of Anarchy*
@@ -13,6 +13,8 @@ Hub note. Teaching and research materials on Shelley, Peterloo, and Manchester p
 
 - [[The Mask of Anarchy — Student Handout]] — classroom handout, undergraduate. Text and title crux, five defaults to unlearn, the massacre, Manchester's governance and production, glossary, timeline, marked passages, discussion questions.
 - [[Malm — Fossil Capital and Manchester]] — parallel chronology setting Andreas Malm's dated Manchester material against the political sequence of 1811–1821 that *Fossil Capital* omits, with four analytic problems sorted by kind.
+- [[Anabelle Shelley Adorno]] — Adorno, "On Lyric Poetry and Society" (1957): summary, what it adds to the course, where the class can beat him, and the Shelley/Adorno pairing on the same diagnosis with opposite prescriptions.
+- [[Samuel Shelley Larkin]] — Larkin's "The Whitsun Weddings" beside the *Masque*: the Whit Walks fact that makes the comparison hold, the arrow-shower, and the objection on address.
 
 ## The controlling absence
 
