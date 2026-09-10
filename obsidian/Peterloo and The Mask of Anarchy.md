@@ -15,6 +15,7 @@ Hub note. Teaching and research materials on Shelley, Peterloo, and Manchester p
 - [[Malm — Fossil Capital and Manchester]] — parallel chronology setting Andreas Malm's dated Manchester material against the political sequence of 1811–1821 that *Fossil Capital* omits, with four analytic problems sorted by kind.
 - [[Anabelle Shelley Adorno]] — Adorno, "On Lyric Poetry and Society" (1957): summary, what it adds to the course, where the class can beat him, and the Shelley/Adorno pairing on the same diagnosis with opposite prescriptions.
 - [[Samuel Shelley Larkin]] — Larkin's "The Whitsun Weddings" beside the *Masque*: the Whit Walks fact that makes the comparison hold, the arrow-shower, and the objection on address.
+- [[Sean Shelley reception history]] — marking response on the Corbyn/Glastonbury frame: the words/swords eye-rhyme as the paper's buried thesis, the refrain as self-fulfilling repetition, Clause IV 1995, and the Demson citation.
 
 ## The controlling absence
 
