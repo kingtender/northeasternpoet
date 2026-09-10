@@ -16,6 +16,7 @@ Hub note. Teaching and research materials on Shelley, Peterloo, and Manchester p
 - [[Anabelle Shelley Adorno]] — Adorno, "On Lyric Poetry and Society" (1957): summary, what it adds to the course, where the class can beat him, and the Shelley/Adorno pairing on the same diagnosis with opposite prescriptions.
 - [[Samuel Shelley Larkin]] — Larkin's "The Whitsun Weddings" beside the *Masque*: the Whit Walks fact that makes the comparison hold, the arrow-shower, and the objection on address.
 - [[Sean Shelley reception history]] — marking response on the Corbyn/Glastonbury frame: the words/swords eye-rhyme as the paper's buried thesis, the refrain as self-fulfilling repetition, Clause IV 1995, and the Demson citation.
+- [[Nell Shelley Casanova]] — marking response on voice and exile: the narrating "I" that vanishes and never returns, crimson dew as the poem's double figure, and the *Prometheus Unbound* preface as Shelley's own answer to the vernacular-versus-esoteric question.
 
 ## The controlling absence
 
