@@ -15,7 +15,10 @@ created: 2026-09-10
 
 Shelley composed the poem in the autumn of 1819 at the Villa Valsovano near Livorno, in Italy, within weeks of hearing about Peterloo. He sent the manuscript to Leigh Hunt for publication in *The Examiner*. Hunt did not print it. The poem first appeared in **1832**, thirteen years later, published by Edward Moxon with a preface by Hunt.
 
-**The title is unstable and the instability matters.** Shelley's manuscripts read *Mask*. Hunt's 1832 first edition prints *Masque*. A mask is a disguise, and the poem uses it that way in its second stanza: Murder "had a mask like Castlereagh." A masque is a courtly procession-drama, and the poem uses that too, calling its own parade of figures "this ghastly masquerade." Both readings are in the poem. Your edition has chosen one. Notice which.
+**The title is unstable and the instability matters.** Hunt's 1832 first edition prints *Masque*. Mary Shelley's edition of 1839 prints *Mask*, and she calls it the "Mask of Anarchy" in her own note on the poem. Modern editors mostly follow *Mask* on manuscript authority. A mask is a disguise, and the poem uses it that way in its second stanza: Murder "had a mask like Castlereagh." A masque is a courtly procession-drama, and the poem uses that too, calling its own parade of figures "this ghastly masquerade." Both readings are in the poem. Your edition has chosen one. Notice which.
+
+> [!warning] Do not tell students the manuscript settles it
+> The primary manuscript is Mary Shelley's transcript with Shelley's autograph corrections, so a *Mask* title there may be in her hand rather than his. Whether Shelley himself ever wrote either spelling as a title is unresolved here. See the textual headnote in *The Poems of Shelley*, vol. 3, ed. Donovan, Duffy, Everest and Rossington (Longman) before asserting anything about his usage.
 
 The stanza numbers below follow the standard text (Hutchinson, after the Hunt manuscript). Where a quotation ends in a dash or a comma, that is the edition's pointing, not a typo. Stanza 38 and stanza 91 are the same stanza printed twice, with different punctuation the second time. Ask yourself what changes on the repeat.
 
